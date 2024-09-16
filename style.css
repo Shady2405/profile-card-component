@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+.bigcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+.top{
+    position: absolute;
+    top: -40%;
+    left: -5%;
+    max-width: 50%;
+}
+.bottom{
+    bottom: -55%;
+    right: -10%;
+    max-width: 55%;
+    position: absolute;
+}
+.container{
+    width: 350px;
+    height: 370px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+p{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.small{
+    font-size: 15px;
+    color: hsl(227, 10%, 46%);
+    font-weight: normal;
+}
+.l{
+    margin-top: 10px;
+}
+.margin{
+    margin-top: 65px;
+    text-align: center;
+    width: 100%;
+}
+/* .Crest{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+} */
+.Crest span{
+    font-weight: normal;
+    color: hsl(227, 10%, 46%);
+}
+.card{
+    border-radius: 15px 15px 0 0;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+.victor{
+    border-radius: 50%;
+    width: 105px;
+    border: 5px solid white;
+    position: absolute;
+    top: 85px;
+}
+.line{
+    border-bottom: 1px solid hsl(227, 10%, 46%, 0.5);
+}
+.followers{
+    display: flex;
+    justify-content: space-between;
+}
+.followers .small{
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+@media screen and (max-width:1100px) {
+    .bottom{
+        bottom: -40%;;
+    }
+}
+@media screen and (max-width:840px) {
+    .bottom{
+        bottom: -30%;;
+    }
+    .top{
+        top: -25%;
+    }
+}
+@media screen and (max-width:690px) {
+    .bottom{
+        bottom: -20%;;
+    }
+}
+@media screen and (max-width:600px) {
+    .bottom{
+        bottom: -5%;
+    }
+    .top{
+        top: -5%;
+    }
+}
+@media screen and (max-width:440px) {
+    .bottom{
+        bottom: 0%;
+        right: -15%;
+    }
+    .top{
+        top: -5%;
+        left: 4%;
+    }
+}
